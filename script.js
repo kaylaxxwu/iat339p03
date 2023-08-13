@@ -31,10 +31,28 @@ const typeEffect = () => {
 
 typeEffect();
 
-// click to enlarge curs
+// click to enlarge cursor
 document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('click', () => {
       card.classList.toggle('largeCursor');
     });
   });
   
+
+
+// change project section to bold when in the project section
+  const projectSection = document.getElementById("project");
+
+  function checkActiveSection() {
+    const rect = projectSection.getBoundingClientRect();
+    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+      document.querySelector(".nav-link[href='#project']").classList.add("active");
+    } else {
+      document.querySelector(".nav-link[href='#project']").classList.remove("active");
+    }
+  }
+
+  window.addEventListener("scroll", checkActiveSection);
+  window.addEventListener("load", checkActiveSection);
+
+
