@@ -22,12 +22,14 @@ body {
       padding: 0;
       color: #2C2C2C;
     }
+
     h3{
       font-size: 2rem;
       font-weight: 600;
-      margin: 0;
+      margin-top: 0;
       padding: 0;
       color: #2C2C2C;
+      margin-bottom: 32px;
     }
 
     h4{
@@ -62,7 +64,7 @@ background-color: white;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     margin: 0;
     position: fixed;
-    top: 0.5rem;
+    top: 0;
    width: 100%;
    right:80px;
     z-index: 100;
@@ -275,4 +277,105 @@ height: 24px;
   .about-text p{
     margin-bottom: 10px;
   }
+
+
+  .projectHero{
+    width: 100%;
+    overflow: hidden;
+  margin-bottom: 64px;
+  }
+
+  .projectHero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .project-section{
+    margin-bottom: 56px;
+  }
+
+  .projectContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
   
+  .leftSide {
+    flex: 1; /* Take up 1/2 of the available space */
+    
+  }
+  
+  .rightSide {
+    flex: 1; /* Take up 1/2 of the available space */
+    
+  }
+
+  .list-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .four-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    padding: 0;
+  }
+
+  .four-columns li {
+    padding-right: 32px;
+    line-height: 24px;
+  }
+  .label {
+    font-weight: 600;
+
+  }
+  .projectHeader {
+  font-size: 64px;
+    margin-bottom: 72px;
+  }
+
+  .rightSide p{
+    margin-bottom: 16px;
+  }
+
+  .problemList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .problemList li {
+    font-size: 20px; /* Adjust the font size as needed */
+    margin-bottom: 16px; /* Adjust the margin between items as needed */
+    line-height: 26px;
+  }
+  
+  .problemList li span {
+    font-weight: bold;
+    margin-right: 4px;
+  }
+
+  .rightSide img{
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  .submit{
+ 
+    color: #2C2C2C;
+    border: none;
+   background-color:#D0FD5F;
+   padding: 10px;
+    text-decoration: none;
+   
+  
+  }
+
+  .submit:hover{
+    text-decoration: line-through black;
+  }
+
+  .nextProject{
+    margin-bottom: 40px;
+  }
