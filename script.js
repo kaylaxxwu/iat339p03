@@ -55,19 +55,13 @@ document.querySelectorAll('.card').forEach(card => {
   window.addEventListener("scroll", checkActiveSection);
   window.addEventListener("load", checkActiveSection);
 
-// view other project button
-  const viewOtherProjectButton = document.getElementById("viewOtherProjectButton");
-
-  viewOtherProjectButton.textContent = "View Libro Cafe";
-  viewOtherProjectButton.addEventListener("click", () => {
-    window.location.href = "libro.html"; // Link to Libro Cafe page
-  });
-
-  const viewOtherProjectButton = document.getElementById("viewOtherProjectButton");
-
-viewOtherProjectButton.textContent = "View Unigo";
-viewOtherProjectButton.addEventListener("click", () => {
-  window.location.href = "unigo.html"; // Link to Unigo page
-});
-
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+  }
+  
   

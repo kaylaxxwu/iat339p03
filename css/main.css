@@ -18,9 +18,10 @@ body {
       font-size: 3rem;
       font-weight: 600;
       margin-top: 0;
-      margin-bottom: 32px;
+      margin-bottom: 16px;
       padding: 0;
       color: #2C2C2C;
+      line-height: 140%;
     }
 
     h3{
@@ -30,12 +31,14 @@ body {
       padding: 0;
       color: #2C2C2C;
       margin-bottom: 32px;
+      line-height: 150%;
     }
 
     h4{
       font-size: 1.5rem;
       font-weight: 600;
-      margin: 0;
+      margin-top: 0;
+      margin-bottom: 16px;
       padding: 0;
       color: #2C2C2C;
     }
@@ -180,7 +183,7 @@ background-color: white;
 
 
 
-/* project card */
+/* project card  text on top of image source from https://www.w3schools.com/howto/howto_css_image_text.asp*/
       .card-container{
         display: flex;
         flex-direction: row;
@@ -241,7 +244,7 @@ height: 24px;
     fill:#2C2C2C;
   }
   
-  .footer-right svg :hover{
+  .footer-right svg :hover, .footer-right svg:focus{
     fill:#D0FD5F;
   }
     
@@ -261,11 +264,14 @@ height: 24px;
   .about-img {
     flex: 0 0 auto; /* Don't grow or shrink, fixed width */
     margin-right: 64px; /* Add spacing between image and text */
+    flex: 1;
+    
   }
+
   .about-img img{
-    width: 500px;
+    width: 100%;
     height: auto;
-   
+    
 
   }
 
@@ -290,6 +296,7 @@ height: 24px;
     height: auto;
     display: block;
   }
+
   .project-section{
     margin-bottom: 56px;
   }
@@ -346,8 +353,8 @@ height: 24px;
   }
   
   .problemList li {
-    font-size: 20px; /* Adjust the font size as needed */
-    margin-bottom: 16px; /* Adjust the margin between items as needed */
+    font-size: 20px; 
+    margin-bottom: 16px; 
     line-height: 26px;
   }
   
@@ -361,6 +368,7 @@ height: 24px;
     margin-bottom: 16px;
   }
   
+  /* source code from my first project*/
   .submit{
  
     color: #2C2C2C;
@@ -379,3 +387,221 @@ height: 24px;
   .nextProject{
     margin-bottom: 40px;
   }
+
+  /* Style Guid*/
+
+  .divider{
+  
+    margin-bottom: 40px;
+  }
+
+  #fonts{
+    margin-top: 100px;
+  }
+
+  /*source code from https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+  .flex-container {
+   
+    display: flex;
+    
+  
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .yellow {
+    background: #D0FD5F;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+  
+    color: #2C2C2C;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .black {
+    background: #2C2C2C;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+ 
+    color: white;
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .white{
+    background: white;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+   
+    color:#2C2C2C;
+    
+   
+    text-align: center;
+    border: solid 1px #2C2C2C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /**image flexbox   source code from my first project **/
+  .imageContainer {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:24px;
+  }
+  
+  .imageContainer img {
+    flex: 1;
+  }
+
+
+
+
+  /* Responsiveness */
+  @media screen and (max-width: 768px)  {
+    body{
+      margin: 24px!important;
+    }
+
+  h1{
+    font-size: 3.5rem !important;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    color: #2C2C2C;
+  }
+
+  h2{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 24px;
+    padding: 0;
+    color: #2C2C2C;
+    line-height: 140%;
+  }
+
+  h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0;
+    padding: 0;
+    color: #2C2C2C;
+    margin-bottom: 16px;
+  }
+
+  h4{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding: 0;
+    color: #2C2C2C;
+  }
+  p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 170%;
+    margin: 0;
+    padding: 0;
+    color: #2C2C2C;
+  }
+
+
+  .projectHeader {
+    font-size: 32px;
+      margin-bottom: 14px;
+      line-height: 140%;
+    }
+
+    .projectContainer {
+      display: flex;
+      flex-direction: column;
+    flex-wrap: wrap;
+      
+    }
+
+    .project-section{
+      margin-bottom: 8px;
+    }
+
+    .projectHero{
+      width: 100%;
+      overflow: hidden;
+    margin-bottom: 24px;
+    margin-top: 80px;
+    }
+
+    .four-columns {
+      grid-template-columns: repeat(2, 1fr); /* Change to 2 columns for smaller screens */
+      gap: 16px; /* Add some gap between columns */
+    }
+  
+    .four-columns li {
+      padding-right: 16px; /* Reduce padding for smaller screens */
+      line-height: 20px; /* Adjust line-height for smaller screens */
+      font-size: 14px;
+    }
+
+    .problemList li {
+      font-size: 16px; 
+      margin-bottom: 16px; 
+      line-height: 20px;
+    }
+
+    .about-container{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-top: 80px;
+      margin-bottom: 32px;
+    }
+
+   .kaylaText svg{
+    width: 100%;
+   }
+  
+   .card-container{
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:100px;
+    margin-top: 0;
+  
+   }
+
+}
+
+
+@media screen and (max-width: 375px)   {
+
+  h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding: 0;
+    color: #2C2C2C;
+    line-height: 140%;
+  }
+
+
+    }
+  
+  
